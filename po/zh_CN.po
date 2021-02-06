@@ -1689,7 +1689,7 @@ msgstr "Nm&#10;Lk"
 #. translators: this is a 'tooltip' of the key_template 'layer1' in keyboard layout 'key_defs.xml'
 #: ../data/layoutstrings.py:70 ../data/layoutstrings.py:289
 msgid "Number block and snippets"
-msgstr "数字键盘和片段"
+msgstr "数字键盘、功能键和编辑键等"
 
 #. translators: very short label of the PAUSE key
 #: ../data/layoutstrings.py:72
