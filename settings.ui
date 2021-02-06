@@ -248,10 +248,12 @@
       </row>
       <row>
         <col id="0" translatable="yes">Auto-show</col>
-      </row>
+</row>
+<!--ukui-v10-pro 删除输入助手
       <row>
         <col id="0" translatable="yes">Typing Assistance</col>
-      </row>
+	</row>
+-->
       <row>
         <col id="0" translatable="yes">Universal Access</col>
       </row>
@@ -3593,7 +3595,8 @@ Requires restart.</property>
                     <property name="position">6</property>
                     <property name="tab_fill">False</property>
                   </packing>
-                </child>
+	  </child>
+	  <!-- ukui-v10-pro 删除输入助手
                 <child>
                   <object class="GtkBox" id="word_suggestions_box">
                     <property name="visible">True</property>
@@ -4110,7 +4113,8 @@ Requires restart.</property>
                   <packing>
                     <property name="position">7</property>
                   </packing>
-                </child>
+		  </child>
+			 -->
                 <child type="tab">
                   <object class="GtkLabel" id="label52">
                     <property name="visible">True</property>

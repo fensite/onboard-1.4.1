@@ -504,7 +504,7 @@ class Settings(DialogBuilder):
         self._page_auto_show = PageAutoShow(self, builder)
 
         # word suggestions
-        self._page_word_suggestions = PageWordSuggestions(self, builder)
+        # self._page_word_suggestions = PageWordSuggestions(self, builder)
 
         # window, docking
         self.docking_enabled_toggle = \
