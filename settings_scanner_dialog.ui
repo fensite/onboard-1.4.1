@@ -239,16 +239,28 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkCheckButton" id="user_scan">
-                            <property name="label" translatable="yes">Step _only during switch down</property>
-                            <property name="use_action_appearance">False</property>
+                          <object class="GtkBox" id="ukui_settings_scanner_box1">
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">False</property>
-                            <property name="tooltip_text" translatable="yes">Progress the highlight only while the switch is held down.</property>
-                            <property name="use_underline">True</property>
-                            <property name="xalign">0</property>
-                            <property name="draw_indicator">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="border_width">0</property>
+                            <property name="orientation">horizontal</property>
+                            <property name="spacing">6</property>
+                            <child>
+                              <object class="GtkCheckButton" id="user_scan">
+                                <property name="label" translatable="yes">Step _only during switch down</property>
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="tooltip_text" translatable="yes">Progress the highlight only while the switch is held down.</property>
+                                <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
+                                <property name="draw_indicator">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
@@ -550,17 +562,29 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkCheckButton" id="device_detach">
-                    <property name="label" translatable="yes">_Use this device only for scanning</property>
-                    <property name="use_action_appearance">False</property>
+                  <object class="GtkBox" id="ukui_settings_scanner_box2">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_text" translatable="yes">The selected device should not control the system mouse cursor or the keyboard caret.</property>
-                    <property name="margin_left">12</property>
-                    <property name="use_underline">True</property>
-                    <property name="xalign">0.5</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="border_width">0</property>
+                    <property name="orientation">horizontal</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkCheckButton" id="device_detach">
+                        <property name="label" translatable="yes">_Use this device only for scanning</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="tooltip_text" translatable="yes">The selected device should not control the system mouse cursor or the keyboard caret.</property>
+                        <property name="margin_left">12</property>
+                        <property name="use_underline">True</property>
+                        <property name="xalign">0.5</property>
+                        <property name="draw_indicator">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
