@@ -232,7 +232,7 @@ class AutoShow(object):
 
         # Temporarily stop showing/hiding.
         if thaw_time:
-            self.lock("lock_visible", thaw_time, True, True)
+            self.lock("lock_visible", thaw_time, True, False)
 
         # Leave the window in its current state,
         # discard pending hide/show actions.
