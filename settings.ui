@@ -1729,6 +1729,7 @@ Requires restart.</property>
                         <property name="position">2</property>
                       </packing>
                     </child>
+                    <!-- ukui-v10.1pro remove four buttons (new, delete,open,about) in onboard layout page
                     <child>
                       <object class="GtkButtonBox" id="buttonbox2">
                         <property name="visible">True</property>
@@ -1803,6 +1804,7 @@ Requires restart.</property>
                         <property name="position">3</property>
                       </packing>
                     </child>
+                    -->
                   </object>
                   <packing>
                     <property name="position">2</property>
