@@ -744,52 +744,57 @@ class Settings(DialogBuilder):
         config.window.inactive_transparency_delay = widget.get_value()
 
     def on_layout_new_button_clicked(self, widget):
-        name = self.get_selected_layout_value(self.LAYOUT_COL_NAME)
-        filename = self.get_selected_layout_filename()
-        if filename:
-            new_layout_name = show_ask_string_dialog(
-                _format("Copy layout '{}' to this new name:", name), self.window)
-            if new_layout_name:
-                new_filename = \
-                    os.path.join(self.user_layout_root, new_layout_name) + \
-                    config.LAYOUT_FILE_EXTENSION
-                LayoutLoaderSVG.copy_layout(filename, new_filename)
-                self.update_layout_view()
-                self.open_user_layout_dir()
+        # name = self.get_selected_layout_value(self.LAYOUT_COL_NAME)
+        # filename = self.get_selected_layout_filename()
+        # if filename:
+        #     new_layout_name = show_ask_string_dialog(
+        #         _format("Copy layout '{}' to this new name:", name), self.window)
+        #     if new_layout_name:
+        #         new_filename = \
+        #             os.path.join(self.user_layout_root, new_layout_name) + \
+        #             config.LAYOUT_FILE_EXTENSION
+        #         LayoutLoaderSVG.copy_layout(filename, new_filename)
+        #         self.update_layout_view()
+        #         self.open_user_layout_dir()
+        pass
 
     def on_layout_remove_button_clicked(self, event):
-        name = self.get_selected_layout_value(self.LAYOUT_COL_NAME)
-        filename = self.get_selected_layout_filename()
-        if filename:
-            question = _format("Delete layout '{}'?", name)
-            if show_confirmation_dialog(question, self.window):
-                LayoutLoaderSVG.remove_layout(filename)
-
-                config.layout_filename = self.layout_view_model[0][1] \
-                                        if len(self.layout_view_model) else ""
-                self.update_layout_view()
+        # name = self.get_selected_layout_value(self.LAYOUT_COL_NAME)
+        # filename = self.get_selected_layout_filename()
+        # if filename:
+        #     question = _format("Delete layout '{}'?", name)
+        #     if show_confirmation_dialog(question, self.window):
+        #         LayoutLoaderSVG.remove_layout(filename)
+        #
+        #         config.layout_filename = self.layout_view_model[0][1] \
+        #                                 if len(self.layout_view_model) else ""
+        #         self.update_layout_view()
+        pass
 
     def open_user_layout_dir(self):
-        user_layout_dir = self.user_layout_root
-        XDGDirs.assure_user_dir_exists(user_layout_dir)
-        cmd = ["xdg-open", user_layout_dir]
-        try:
-            Popen(cmd)
-        except OSError as e:
-            _logger.warning("Failed to run '{}': {}" \
-                            .format(" ".join(cmd), unicode_str(e)))
+        # user_layout_dir = self.user_layout_root
+        # XDGDirs.assure_user_dir_exists(user_layout_dir)
+        # cmd = ["xdg-open", user_layout_dir]
+        # try:
+        #     Popen(cmd)
+        # except OSError as e:
+        #     _logger.warning("Failed to run '{}': {}" \
+        #                     .format(" ".join(cmd), unicode_str(e)))
+        pass
 
     def on_layout_folder_button_clicked(self, widget):
-        self.open_user_layout_dir()
+        # self.open_user_layout_dir()
+        pass
 
     def update_layout_widgets(self):
-        filename = self.get_selected_layout_filename()
-        self.wid("layout_new_button").set_sensitive(not filename is None)
-        self.wid("layout_remove_button").set_sensitive(not filename is None and \
-                                         os.access(filename, os.W_OK))
-        has_about_info = bool( \
-            self.get_selected_layout_value(self.LAYOUT_COL_HAS_ABOUT_INFO))
-        self.wid("layout_about_button").set_sensitive(has_about_info)
+        # filename = self.get_selected_layout_filename()
+        # self.wid("layout_new_button").set_sensitive(not filename is None)
+        # self.wid("layout_remove_button").set_sensitive(not filename is None and \
+        #                                  os.access(filename, os.W_OK))
+        # has_about_info = bool( \
+        #     self.get_selected_layout_value(self.LAYOUT_COL_HAS_ABOUT_INFO))
+        # self.wid("layout_about_button").set_sensitive(has_about_info)
+        pass
 
     def on_scanner_enabled_toggled(self, widget):
         config.scanner.enabled = widget.get_active()

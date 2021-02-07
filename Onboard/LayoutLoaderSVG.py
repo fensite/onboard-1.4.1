@@ -1009,9 +1009,10 @@ class LayoutLoaderSVG:
 
     @staticmethod
     def remove_layout(filename):
-        for fn in LayoutLoaderSVG.get_layout_svg_filenames(filename):
-            os.remove(fn)
-        os.remove(filename)
+        # for fn in LayoutLoaderSVG.get_layout_svg_filenames(filename):
+        #     os.remove(fn)
+        # os.remove(filename)
+        pass
 
     @staticmethod
     def get_layout_svg_filenames(filename):
