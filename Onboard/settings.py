@@ -489,16 +489,16 @@ class Settings(DialogBuilder):
         self.bind_combobox_id("input_event_source_combobox",
                               config.keyboard, "input_event_source",
                               config_set_callback=on_input_event_source_set)
+        # ukui-v10.1-pro remove
+        # def get_inter_key_stroke_delay(config_object, key):
+        #     return getattr(config_object, key) * 1000.0
 
-        def get_inter_key_stroke_delay(config_object, key):
-            return getattr(config_object, key) * 1000.0
+        # def set_inter_key_stroke_delay(config_object, key, value):
+        #     setattr(config_object, key, value / 1000.0)
 
-        def set_inter_key_stroke_delay(config_object, key, value):
-            setattr(config_object, key, value / 1000.0)
-
-        self.bind_spin("inter_key_stroke_delay_spinbutton",
-                       config.keyboard, "inter_key_stroke_delay",
-                       get_inter_key_stroke_delay, set_inter_key_stroke_delay)
+        # self.bind_spin("inter_key_stroke_delay_spinbutton",
+        #                config.keyboard, "inter_key_stroke_delay",
+        #                get_inter_key_stroke_delay, set_inter_key_stroke_delay)
 
         # Auto-show
         self._page_auto_show = PageAutoShow(self, builder)

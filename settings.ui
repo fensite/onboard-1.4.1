@@ -2901,54 +2901,56 @@ Requires restart.</property>
                                             <property name="margin_top">2</property>
                                             <property name="orientation">vertical</property>
                                             <property name="spacing">2</property>
-                                            <child>
-                                              <object class="GtkBox" id="box38">
-                                                <property name="visible">True</property>
-                                                <property name="can_focus">False</property>
-                                                <property name="spacing">12</property>
-                                                <child>
-                                                  <object class="GtkLabel" id="label57">
-                                                    <property name="visible">True</property>
-                                                    <property name="can_focus">False</property>
-                                                    <property name="label" translatable="yes">Delay between keystrokes in milliseconds:</property>
-                                                    <property name="use_underline">True</property>
-                                                    <property name="mnemonic_widget">inter_key_stroke_delay_spinbutton</property>
-                                                    <property name="single_line_mode">True</property>
-                                                    <property name="xalign">0</property>
-                                                  </object>
-                                                  <packing>
-                                                    <property name="expand">False</property>
-                                                    <property name="fill">True</property>
-                                                    <property name="position">0</property>
-                                                  </packing>
-                                                </child>
-                                                <child>
-                                                  <object class="GtkSpinButton" id="inter_key_stroke_delay_spinbutton">
-                                                    <property name="visible">True</property>
-                                                    <property name="can_focus">True</property>
-                                                    <property name="tooltip_text" translatable="yes">Increase this if key-strokes get lost when inserting word suggestions or snippets into Firefox or other Gtk-2 applications. Has no effect on Gtk-3 applications.</property>
-                                                    <property name="invisible_char">•</property>
-                                                    <property name="text" translatable="yes">0,00</property>
-                                                    <property name="xalign">1</property>
-                                                    <property name="shadow_type">out</property>
-                                                    <property name="input_purpose">number</property>
-                                                    <property name="adjustment">_inter_key_stroke_delay_adjustment</property>
-                                                    <property name="numeric">True</property>
-                                                    <property name="value">2.2351741811588166e-10</property>
-                                                  </object>
-                                                  <packing>
-                                                    <property name="expand">False</property>
-                                                    <property name="fill">True</property>
-                                                    <property name="position">1</property>
-                                                  </packing>
-                                                </child>
-                                              </object>
-                                              <packing>
-                                                <property name="expand">False</property>
-                                                <property name="fill">True</property>
-                                                <property name="position">0</property>
-                                              </packing>
-                                            </child>
+                                            <!-- ukui-10.1pro 屏幕键盘首选项-高级选项-按键延迟注释  -->
+<!--                                            <child>-->
+<!--                                              <object class="GtkBox" id="box38">-->
+<!--                                                <property name="visible">True</property>-->
+<!--                                                <property name="can_focus">False</property>-->
+<!--                                                <property name="spacing">12</property>-->
+<!--                                                <child>-->
+<!--                                                  <object class="GtkLabel" id="label57">-->
+<!--                                                    <property name="visible">True</property>-->
+<!--                                                    <property name="can_focus">False</property>-->
+<!--                                                    <property name="label" translatable="yes">Delay between keystrokes in milliseconds:</property>-->
+<!--                                                    <property name="use_underline">True</property>-->
+<!--                                                    <property name="mnemonic_widget">inter_key_stroke_delay_spinbutton</property>-->
+<!--                                                    <property name="single_line_mode">True</property>-->
+<!--                                                    <property name="xalign">0</property>-->
+<!--                                                  </object>-->
+<!--                                                  <packing>-->
+<!--                                                    <property name="expand">False</property>-->
+<!--                                                    <property name="fill">True</property>-->
+<!--                                                    <property name="position">0</property>-->
+<!--                                                  </packing>-->
+<!--                                                </child>-->
+<!--                                                <child>-->
+<!--                                                  <object class="GtkSpinButton" id="inter_key_stroke_delay_spinbutton">-->
+<!--                                                    <property name="visible">True</property>-->
+<!--                                                    <property name="can_focus">True</property>-->
+<!--                                                    <property name="tooltip_text" translatable="yes">Increase this if key-strokes get lost when inserting word suggestions or snippets into Firefox or other Gtk-2 applications. Has no effect on Gtk-3 applications.</property>-->
+<!--                                                    <property name="invisible_char">•</property>-->
+<!--                                                    <property name="text" translatable="yes">0,00</property>-->
+<!--                                                    <property name="xalign">1</property>-->
+<!--                                                    <property name="shadow_type">out</property>-->
+<!--                                                    <property name="input_purpose">number</property>-->
+<!--                                                    <property name="adjustment">_inter_key_stroke_delay_adjustment</property>-->
+<!--                                                    <property name="numeric">True</property>-->
+<!--                                                    <property name="value">2.2351741811588166e-10</property>-->
+<!--                                                  </object>-->
+<!--                                                  <packing>-->
+<!--                                                    <property name="expand">False</property>-->
+<!--                                                    <property name="fill">True</property>-->
+<!--                                                    <property name="position">1</property>-->
+<!--                                                  </packing>-->
+<!--                                                </child>-->
+<!--                                              </object>-->
+<!--                                              <packing>-->
+<!--                                                <property name="expand">False</property>-->
+<!--                                                <property name="fill">True</property>-->
+<!--                                                <property name="position">0</property>-->
+<!--                                              </packing>-->
+<!--                                            </child>-->
+
                                             <child>
                                               <object class="GtkBox" id="box7">
                                                 <property name="visible">True</property>
@@ -4643,7 +4645,7 @@ Requires restart.</property>
       <widget name="label34"/>
       <widget name="label35"/>
       <widget name="label36"/>
-      <widget name="label57"/>
+<!--      <widget name="label57"/>-->
       <widget name="label50"/>
     </widgets>
   </object>
