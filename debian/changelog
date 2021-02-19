@@ -1,3 +1,30 @@
+onboard (1.4.1-2kylin7k19) v101; urgency=medium
+
+  * 解决安装时警告信息
+
+ -- zhaikangning <zhaikangning@kylinos.cn>  Fri, 19 Feb 2021 14:45:56 +0800
+
+onboard (1.4.1-2kylin7k18) v101; urgency=medium
+
+  * Remove the function of keyboard keystroke dev101
+    - 裁剪设置两次按键延迟的功能
+
+ -- zhaikangning <zhaikangning@kylinos.cn>  Fri, 19 Feb 2021 09:02:03 +0800
+
+onboard (1.4.1-2kylin7k17) v101; urgency=medium
+
+  *  Remove the word suggestion box 
+  *  Fixed solve the problem of inaccurate check operation in preferences
+    - #35940 解决首选项中勾选操作不准确问题
+  *   Fixed: modify 'Number block and snippets' translation
+    - #38113 优化'Number block and snippets'翻译问题
+  * Remove four buttons in onboard layout page and comment blocks of code. 
+    - 移除布局‘新’、‘删除’、‘打开布局文件’等按钮
+  *   Fixed:Solve the problem of ‘pressing the physical key to hide ineffective’
+    - #36089 解决‘按下物理键隐藏未生效’的问题
+
+ -- zhaikangning <zhaikangning@kylinos.cn>  Sun, 07 Feb 2021 17:30:19 +0800
+
 onboard (1.4.1-2kylin7k16) v101; urgency=medium
 
   * cancels the keyboard zoom function
