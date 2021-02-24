@@ -516,6 +516,11 @@ class LayoutLoaderSVG:
                 labels = {0 : olabel[:]}
                 if ogroup:
                     group_name = ogroup[:]
+                    # The Super key cannot be restored after being rewritten, 
+                    # the root cause has not been located yet, and the solution is temporarily adopted 
+                    # #20101
+                    if str(ogroup) == "super-group":
+                        labels = {0 : "Super"}
 
         key.labels = labels
         key.group = group_name
