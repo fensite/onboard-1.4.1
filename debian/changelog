@@ -1,3 +1,13 @@
+onboard (1.4.1-2kylin7k20) v101; urgency=medium
+
+  * Fixed: 'Super' key can't be show label
+    - 解决'Super'无法被标注问题
+    - http://172.17.66.192/biz/bug-view-20101.html
+  * Fixed:'Activate Hover Click' button does not work
+    - #33579 解决'激活悬停单击'按钮不可点击的问题
+
+ -- zhaikangning <zhaikangning@kylinos.cn>  Mon, 01 Mar 2021 19:14:06 +0800
+
 onboard (1.4.1-2kylin7k19) v101; urgency=medium
 
   * 解决安装时警告信息
