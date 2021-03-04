@@ -400,7 +400,7 @@ Modifiers can only be "SHIFT" at the moment.
             <description>Delay in seconds from leaving Onboards window until the inactive transparency takes effect.</description>
         </key>
         <key name="window-handles" type="s">
-            <default>"E SE S SW W NW N NE M"</default>
+            <default>"M"</default>
             <summary>Window resize and move handles</summary>
             <description>Active resize and move handles, space separated.</description>
         </key>
