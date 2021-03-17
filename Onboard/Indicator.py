@@ -133,7 +133,7 @@ class ContextMenu(GObject.GObject):
         self._keyboard.request_visibility_toggle()
 
     def _on_help(self, data=None):
-        subprocess.Popen(["xdg-open", "help:onboard"])
+        subprocess.Popen(["/usr/bin/xdg-open", "help:onboard"])
 
     def _on_quit(self, data=None):
         _logger.debug("Entered _on_quit")

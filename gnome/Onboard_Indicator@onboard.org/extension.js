@@ -69,7 +69,7 @@ const OnboardIndicator = new Lang.Class({
         this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
 
         this.menu.addAction(_('Help'), function(event) {
-            GLib.spawn_command_line_async('xdg-open help:onboard', null);
+            GLib.spawn_command_line_async('/usr/bin/xdg-open help:onboard', null);
         });
     },
 

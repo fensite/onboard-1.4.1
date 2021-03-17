@@ -1,3 +1,13 @@
+onboard (1.4.1-2kylin7k21) v101; urgency=medium
+
+  * Fixed:display an exception when the mouse and screen onboard are placed at the bottom
+    - 解决将屏幕键盘拖到最底，鼠标放置在最底端时屏幕显示异常的问题
+    - http://172.17.66.192/biz/bug-view-38347.html
+  * Feature: Revise the way to recall the help manual
+    - 修改帮助手册的调起方式
+
+ -- zhaikangning <zhaikangning@kylinos.cn>  Wed, 17 Mar 2021 14:56:34 +0800
+
 onboard (1.4.1-2kylin7k20) v101; urgency=medium
 
   * Fixed: 'Super' key can't be show label
