@@ -1,3 +1,11 @@
+onboard (1.4.1-2kylin7k22) v101; urgency=medium
+
+  * Fixed: some buttons in setting interface wait for the dialog box to close to occupy the focus
+    - 解决设置界面点击部分按钮的弹窗关闭后仍显示蓝色的问题
+    - http://172.17.66.192/biz/bug-view-35956.html
+
+ -- zhaikangning <zhaikangning@kylinos.cn>  Wed, 31 Mar 2021 16:44:13 +0800
+
 onboard (1.4.1-2kylin7k21) v101; urgency=medium
 
   * Fixed:display an exception when the mouse and screen onboard are placed at the bottom
