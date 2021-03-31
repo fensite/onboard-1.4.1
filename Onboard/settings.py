@@ -537,6 +537,13 @@ class Settings(DialogBuilder):
         self.customize_theme_button = \
                                    builder.get_object("customize_theme_button")
 
+        # zhkn  prevent getting focus after clicking button
+        # 涉及的按钮有：窗口->设置    主题->新的；主题->删除    通用访问->扫描设置
+        self.delete_theme_button.set_focus_on_click(False)
+        builder.get_object("docking_settings_button").set_focus_on_click(False)
+        builder.get_object("new_theme_button").set_focus_on_click(False)
+        builder.get_object("scanner_settings").set_focus_on_click(False)
+
         self.update_themeList()
         config.theme_notify_add(self.on_theme_changed)
 
